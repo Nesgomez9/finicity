@@ -1,0 +1,44 @@
+.full-height {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.header {
+  width: 70%;
+  text-align: right;
+}
+
+.green {
+  background-color: #356f42;
+  height: 40px;
+  color: white;
+  font-size: 1.3rem;
+  padding-right: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.gray {
+  background-color: #e7e8ea;
+  border-radius: 10px;
+  margin: 50px 10px;
+  padding: 5px 30px;
+}
+.title {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+.info {
+  text-align: left;
+  padding: 10px;
+}
+.big-title {
+  font-size: 1.5rem;
+}
+.border-white {
+  border-bottom: 2px solid white;
+}
+.text {
+  margin: 40px;
+}

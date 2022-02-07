@@ -1,0 +1,115 @@
+.accounts-table {
+  width: 60vw;
+  @media screen and (max-width: 850px) {
+    width: 90vw;
+  }
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  background: rgba(59, 94, 125, 0.5);
+  border-radius: 10px;
+  padding: 20px 0;
+  overflow-x: auto;
+  &__title {
+    text-align: center;
+    color: white;
+    min-width: 200px;
+  }
+  &__accounts-container {
+    min-width: 700px;
+    margin: 0 30px;
+    background: #ffffff;
+    grid-column: 1 / 5;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &__add-account {
+    grid-column: 1 / 5;
+    align-self: center;
+    margin: 20px 40px;
+  }
+  &__account {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    &__data {
+      margin: 25px 0;
+    }
+    &__select-button {
+      margin: 20px 0;
+      display: flex;
+      width: 50%;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      height: 35px;
+      justify-self: center;
+      border: none;
+      min-width: 200px;
+      &--cancel {
+        background-color: #e1e1ea;
+      }
+      &--add {
+        background: linear-gradient(0deg, #ffa41b, #ffa41b);
+      }
+    }
+    &__select-button:active {
+      transform: translateY(2px);
+    }
+  }
+}
+.modal-accounts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  &__content {
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    flex-direction: column;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  &__button {
+    margin: 20px 0;
+    width: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    min-height: 35px;
+    border: none;
+    min-width: 150px;
+    font-size: 16px;
+    &--cancel {
+      background-color: #e1e1ea;
+      color: black;
+      margin-left: 20px;
+    }
+    &--accept {
+      background-color: #ffa41b;
+    }
+  }
+  &__button:active {
+    transform: translateY(2px);
+  }
+  .decline {
+    margin-left: 20px;
+    background-color: #e1e1ea !important;
+  }
+}

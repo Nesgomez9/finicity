@@ -1,0 +1,110 @@
+@import '~bootstrap/scss/bootstrap';
+$orange: #ffa41b;
+$blue: #74a9bc;
+body {
+  background: radial-gradient(
+      100% 442.24% at 0% 2.37%,
+      #9ed8db 0%,
+      #467599 100%
+    ),
+    #c4c4c4;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.h100 {
+  height: 100vh;
+}
+.h80 {
+  height: 80vh;
+}
+.bg-transparent {
+  background: transparent;
+}
+.w100 {
+  width: 100%;
+}
+.w80 {
+  width: 80vw;
+}
+.w70 {
+  width: 70vw;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.display-none {
+  display: none;
+}
+.flex {
+  display: flex;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.justify-content-end {
+  justify-content: end;
+}
+.center-vertical {
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+.titles {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 10px 20px;
+}
+.w-25 {
+  width: 25%;
+}
+.color-white {
+  color: white;
+}
+.color-orange {
+  color: $orange;
+}
+.color-blue {
+  color: $blue;
+}
+.error-text {
+  font-weight: bold;
+  color: #f8afa7;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-underline {
+  text-decoration: underline;
+}
+
+.format-input {
+  background: transparent;
+  border: none;
+  height: 100%;
+}
+.format-input:focus {
+  outline: none;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,38 @@
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-transaction-details {
+  background-color: white;
+  width: 25%;
+  border-radius: 20px;
+  padding: 60px 40px;
+  text-align: left;
+  color: black;
+  min-width: 300px;
+}
+.border-bot {
+  border-bottom: 1px solid #94cdd4;
+}
+.button {
+  height: 40px;
+
+  margin: 10px 30px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 8px;
+  &--cancel {
+    background-color: #e1e1ea;
+    width: 40%;
+    height: 100%;
+  }
+  &--accept {
+    background-color: #ffa41b;
+    width: 70%;
+    height: 100%;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+}

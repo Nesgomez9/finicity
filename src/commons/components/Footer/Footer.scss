@@ -1,0 +1,30 @@
+.footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #1d3354;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.92rem;
+  padding-bottom: 70px;
+  &__container {
+    margin-top: 75px;
+    border-top: 1px solid white;
+    width: 58%;
+    padding: 25px 15px;
+  }
+}
+
+a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+a:hover {
+  color: #ffa438;
+
+  text-decoration: none;
+  cursor: pointer;
+}
